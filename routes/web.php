@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('client.home');
+});
+
+Route::get('login', 'App\Http\Controllers\LoginController@index')->name('login');
+Route::post('login-process', 'App\Http\Controllers\LoginController@loginProcess')->name('login-process');
+Route::get('logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::group(['middleware' => ['checklogin']], function () {
+        Route::resource('/admin/dashboard', 'App\Http\Controllers\AdminController');
+    });
+    
 });
