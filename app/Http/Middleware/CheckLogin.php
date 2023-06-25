@@ -19,7 +19,7 @@ class CheckLogin
     public function handle(Request $request, Closure $next)
     {
         if (!Auth::check()) {
-            return redirect('login');
+            return redirect('admin/login');
         }
         $levels = DB::table('levels')->get();
         $user = Auth::user();
@@ -28,6 +28,6 @@ class CheckLogin
                 return $next($request);
             }
         }
-        return redirect('login')->with('error', 'Kamu gak punya akses');
+        return redirect('admin/login')->with('error', 'Kamu gak punya akses');
     }
 }
