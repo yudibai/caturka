@@ -40,13 +40,13 @@ class LoginController extends Controller
             }
             return redirect()->intended('/');
         }
-        return Redirect('login')->withInput()->withErrors(['login_gagal' => 'These credentials do not match our records.']);
+        return Redirect('admin/login')->withInput()->withErrors(['login_gagal' => 'These credentials do not match our records.']);
     }
 
     public function logout(Request $request)
     {
        $request->session()->flush();
        Auth::logout();
-       return Redirect('login');
+       return Redirect('admin/login');
     }
 }
