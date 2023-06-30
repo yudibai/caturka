@@ -7,6 +7,7 @@ use DB;
 
 class LevelController extends Controller
 {
+    
     public function getAll()
     {
         return DB::table('levels')->get();

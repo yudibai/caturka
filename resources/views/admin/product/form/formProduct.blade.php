@@ -25,7 +25,7 @@
   <section style="padding: 10px">
     <div class="card card-primary">
         <div class="card-header">
-        <h3 class="card-title">Form Users</h3>
+        <h3 class="card-title">Form Users </h3>
         </div>
         <form>
         <div class="card-body">
@@ -34,16 +34,28 @@
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
           </div>
         <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
+        <label for="exampleInputEmail1">title</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
         </div>
         <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
+        <label for="exampleInputPassword1">subtitle</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Username </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <label for="exampleInputEmail1">image </label>
+            <input type="file" style="border: none" class="form-control" id="exampleInputEmail1" placeholder="Enter image">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">description </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter description">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">created_at </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter created_at">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">update_at </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter update_at">
           </div>
         
         <div class="input-group-append">

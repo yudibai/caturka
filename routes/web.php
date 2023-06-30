@@ -26,9 +26,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['checklogin']], function () {
         Route::resource('/admin/dashboard', 'App\Http\Controllers\DashboardController');
         Route::resource('/admin/users', 'App\Http\Controllers\UserController');
-        Route::resource('/admin/formUser', 'App\Http\Controllers\FormUserController');
-
         Route::resource('/admin/product', 'App\Http\Controllers\ProductController');
+        Route::resource('/admin/level', 'App\Http\Controllers\LevelController');
+
+        Route::resource('/admin/formUser', 'App\Http\Controllers\FormUserController');
+        Route::resource('/admin/formProduct', 'App\Http\Controllers\FormProductController');
 
     });
     // Route::any('/admin/sliders', function () {

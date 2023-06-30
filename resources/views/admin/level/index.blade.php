@@ -30,14 +30,10 @@
       <thead>
         <tr>
           <th >id</th>
-          <th>title</th>
-          <th>subtitle</th>
-          <th>image</th>
-          <th>description</th>
+          <th>name</th>
           <th>created_at</th>
           <th>update_at</th>
           <th>edit</th>
-
         </tr>
       </thead>
       <tbody>
@@ -48,9 +44,7 @@
          example@gmail.com
         </td>
         <td>Lorem ipsum dolor </td>
-        <td>Lorem ipsum dolor </td>
-        <td>Lorem ipsum dolor </td>
-        <td>Lorem ipsum dolor </td>
+
 
         <td>
           <a href="{{url('/admin/formProduct')}}" style="color: green">
