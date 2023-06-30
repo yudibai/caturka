@@ -21,9 +21,15 @@ Route::get('admin/login', 'App\Http\Controllers\LoginController@index')->name('a
 Route::post('admin/login-process', 'App\Http\Controllers\LoginController@loginProcess')->name('admin-login-process');
 Route::get('admin/logout', 'App\Http\Controllers\LoginController@logout')->name('admin-logout');
 
+
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['checklogin']], function () {
         Route::resource('/admin/dashboard', 'App\Http\Controllers\DashboardController');
+        Route::resource('/admin/users', 'App\Http\Controllers\UserController');
+        Route::resource('/admin/formUser', 'App\Http\Controllers\FormUserController');
+
+        Route::resource('/admin/product', 'App\Http\Controllers\ProductController');
+
     });
     // Route::any('/admin/sliders', function () {
         

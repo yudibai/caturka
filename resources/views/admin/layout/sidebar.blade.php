@@ -29,8 +29,46 @@
         </div>
       </div>
 
-      <!-- Sidebar Menu -->
       <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="{{url('/admin/users')}}" class="nav-link">
+              <i class="fa fa-fw fa-user"></i> 
+              <p>
+                Users
+              </p>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="{{url('/admin/product')}}" class="nav-link">
+              <i class="fa fa-fw fa-database"></i> 
+              <p>
+                Product
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/admin/product')}}" class="nav-link">
+              <i class="fa fa-fw fa-columns"></i> 
+              <p>
+                Bannerslide
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/admin/product')}}" class="nav-link">
+              <i class="fa fa-fw fa-columns"></i> 
+              <p>
+                Katalog
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2" style="display: none">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
@@ -167,7 +205,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tree"></i>
               <p>
@@ -304,7 +342,7 @@
             <a href="../gallery.html" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
-                Gallery
+                Gallery qweqweqwe
               </p>
             </a>
           </li>
@@ -659,9 +697,18 @@
               <p>Warning</p>
             </a>
           </li>
+          fa fa-fw fa-area-chart
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-circle text-info"></i>
+              
+              <p>Informational</p>
+            </a>
+          </li>
+           <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              
               <p>Informational</p>
             </a>
           </li>
