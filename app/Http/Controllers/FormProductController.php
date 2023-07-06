@@ -9,6 +9,6 @@ class FormProductController extends Controller
     //
     public function index()
     {
-        return view('admin.product.form.formProduct');
+        return view('admin.product.form');
     }
 }

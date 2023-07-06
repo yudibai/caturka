@@ -56,6 +56,30 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{url('/admin/level')}}" class="nav-link">
+              <i class="fa fa-fw fa-clone"></i> 
+              <p>
+                Katalog
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/admin/slider')}}" class="nav-link">
+              <i class="fa fa-fw fa-map"></i> 
+              <p>
+                Slider
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/admin/level')}}" class="nav-link">
+              <i class="fa fa-fw fa-users"></i> 
+              <p>
+                Client
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
 

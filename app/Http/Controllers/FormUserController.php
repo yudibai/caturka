@@ -9,6 +9,6 @@ class FormUserController extends Controller
     //
     public function index()
     {
-        return view('admin.user.form.formUser');
+        return view('admin.user.form');
     }
 }
