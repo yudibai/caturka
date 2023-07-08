@@ -14,16 +14,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('client.home');
+    return view('client.layout.body');
 });
+
+Route::resource('/equipment', 'App\Http\Controllers\EquipmentController');
+Route::resource('/contact', 'App\Http\Controllers\ContactUsController');
+Route::resource('/about', 'App\Http\Controllers\AboutUSController');
+Route::resource('/product', 'App\Http\Controllers\ProductController');
+
 
 Route::get('admin/login', 'App\Http\Controllers\LoginController@index')->name('admin-login');
 Route::post('admin/login-process', 'App\Http\Controllers\LoginController@loginProcess')->name('admin-login-process');
 Route::get('admin/logout', 'App\Http\Controllers\LoginController@logout')->name('admin-logout');
 
+
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['checklogin']], function () {
         Route::resource('/admin/dashboard', 'App\Http\Controllers\DashboardController');
+        Route::resource('/admin/users', 'App\Http\Controllers\UserController');
+        Route::resource('/admin/product', 'App\Http\Controllers\ProductController');
+        Route::resource('/admin/level', 'App\Http\Controllers\LevelController');
+        Route::resource('/admin/slider', 'App\Http\Controllers\SliderController');
+
+        Route::resource('/admin/formUser', 'App\Http\Controllers\FormUserController');
+        Route::resource('/admin/formProduct', 'App\Http\Controllers\FormProductController');
+
     });
     // Route::any('/admin/sliders', function () {
         
