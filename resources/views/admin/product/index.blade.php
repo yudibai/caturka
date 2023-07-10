@@ -1,72 +1,59 @@
 @extends('admin.layout.index')
-@section('title', 'Dashboard')
+@section('title', ''.$title)
 @section('content')
 
-  <!-- Content Header (Page header) -->
   <section class="content-header">
     <div class="container-fluid" >
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Datatables Production</h1>
+          <h1>{{ $title }}</h1>
         </div>
         <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">DataTables</li>
-          </ol>
+          <div class="float-sm-right">
+            <a href="{{ route('admin.product.create')}}" class="btn btn-outline-primary min-width-125" data-toggle="click-ripple" style="overflow: hidden; position: relative; z-index: 1;">Add Product</a>
+          </div>
         </div>
       </div>
-    </div><!-- /.container-fluid -->
+    </div>
   </section>
 
+  
   <section style="padding: 10px">
-    <div class="card" >
-      <div class="card-header">
-      <h3 class="card-title">Striped Full Width Table</h3>
-      </div>
-      
+    @include('admin.layout.widget.notice')
+    <div class="card">
       <div class="card-body p-0">
-      <table class="table table-striped">
-      <thead>
-        <tr>
-          <th >id</th>
-          <th>title</th>
-          <th>subtitle</th>
-          <th>image</th>
-          <th>description</th>
-          <th>created_at</th>
-          <th>update_at</th>
-          <th>edit</th>
-
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>1.</td>
-        <td>Update software</td>
-        <td>
-         example@gmail.com
-        </td>
-        <td>Lorem ipsum dolor </td>
-        <td>Lorem ipsum dolor </td>
-        <td>Lorem ipsum dolor </td>
-        <td>Lorem ipsum dolor </td>
-
-        <td>
-          <a href="{{url('/admin/formProduct')}}" style="color: green">
-            <i class="fa fa-edit"></i> 
-          </a>
-          <a href="{{url('/admin/formUser')}}" style="color: red">
-            <i class="fa fa-trash"></i>
-          </a>
-        </td>
-      </tr>
-      <tr>
-      </tbody>
-      </table>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Name</th>
+              <th class="text-center">Created</th>
+              <th class="text-center">Updated</th>
+              <th class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach ($products as $product)
+            <tr>
+                <td class="text-center" scope="row">{{ $product->name }}</td>
+                <td class="text-center">{{ Carbon::parse($product->created_at)->format('l, d F Y') }}</td>
+                <td class="text-center">{{ $product->updated_at ? Carbon::parse($product->updated_at)->format('l, d F Y') : 'not yet updated' }}</td>
+                <td class="text-center">
+                  <div class="btn-group">
+                    <a href="{{ action('App\Http\Controllers\ProductController@update', $product->id) }}" class="btn btn-success btn-flat">
+                      <i class="fas fa-edit"></i>
+                    </a>
+                    <a href="{{ action('App\Http\Controllers\ProductController@delete', $product->id) }}" class="btn btn-danger btn-flat">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </div>
+                </td>
+            </tr>
+            @endforeach
+          <tr>
+          </tbody>
+        </table>
       </div>
-      
-      </div>
+    </div>
   </section>
 
 @endsection()

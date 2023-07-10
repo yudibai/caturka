@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>CaturKA | @yield('title')</title>
   
 
   <!-- Google Font: Source Sans Pro -->
@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+  <!-- summernote -->
+  <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('assets/css/adminlte.min.css') }}">
 </head>
@@ -67,6 +69,8 @@
 <script src="{{ asset('assets/js/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 {{-- <script src="{{ asset('assets/js/demo.js') }}"></script> --}}
+<!-- Summernote -->
+<script src="{{ asset('plugins/summernote/summernote-bs4.min.js')}}"></script>
 <!-- Page specific script -->
 <script>
   $(function () {
@@ -82,6 +86,9 @@
       "info": true,
       "autoWidth": false,
       "responsive": true,
+    });
+    $(function () {
+      $('#compose-textarea').summernote()
     });
   });
 </script>
