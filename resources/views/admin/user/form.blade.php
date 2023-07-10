@@ -1,6 +1,6 @@
 @extends('admin.layout.index')
 
-@section('title', 'Dashboard')
+@section('title', ''.$title)
 
 @section('content')
 
@@ -10,62 +10,58 @@
     <div class="container-fluid" >
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>DataTables</h1>
-        </div>
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">DataTables</li>
-          </ol>
+          <h1>{{ $title }}</h1>
         </div>
       </div>
     </div><!-- /.container-fluid -->
   </section>
 
   <section style="padding: 10px">
+    @include('admin.layout.widget.notice')
     <div class="card card-primary">
-        <div class="card-header">
-        <h3 class="card-title">Form Users</h3>
-        </div>
-        <form>
+      @isset($user)
+        <form action="{{ route('admin.user.update', $user->id)}}" method="POST">
+      @else
+        <form action="{{ route('admin.user.create')}}" method="POST">
+      @endisset
+          {{ csrf_field() }}
         <div class="card-body">
           <div class="form-group">
-            <label for="exampleInputEmail1">Username </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" value="{{ old('name', $user->name ?? '') }}" placeholder="Enter Name">
           </div>
-        <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Username </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username" value="{{ old('username', $user->username ?? '') }}" placeholder="Enter Username" @isset($toReadOnly) readonly @endisset>
           </div>
-        
-        <div class="input-group-append">
-          <button type="submit" class="btn btn-primary">
-            <a href="{{url('/admin/users')}}" style="color: white">
-              Submit
-            </a>
-          </button>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" value="{{ old('email', $user->email ?? '') }}" placeholder="Enter Email" @isset($toReadOnly) readonly @endisset>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Enter Password" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control" name="passwordConfirm" placeholder="Enter Confirm Password" autocomplete="off"></div>
+          <div class="form-group">
+            <label>Level</label>
+            <select name="level" id="" class="form-control">
+              <option value="">Please Select Level</option>
+              @foreach ($levels as $level)
+                <option value="{{ $level->name }}" {{ old('level', $user->level ?? '') == $level->name ? 'selected' : ''  }}>{{ $level->name }}</option>
+              @endforeach
+            </select>
+          </div>
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
+          </div>
         </div>
-        </div>
-        </div>
-     
-        </div>
-        
-        <div class="card-footer">
-          <a href="{{url('/admin/users')}}">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </a>
-        </div>
-        </form>
-        </div>
-
+      </form>
+    </div>
   </section>
 
 

@@ -1,86 +1,59 @@
 @extends('admin.layout.index')
 
-@section('title', 'Dashboard')
+@section('title', ''.$title)
 
 @section('content')
-
 
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <div class="container-fluid" >
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>DataTables</h1>
-        </div>
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">DataTables</li>
-          </ol>
+          <h1>{{ $title }}</h1>
         </div>
       </div>
     </div><!-- /.container-fluid -->
   </section>
 
   <section style="padding: 10px">
+    @include('admin.layout.widget.notice')
     <div class="card card-primary">
-        <div class="card-header">
-        <h3 class="card-title">Form Users </h3>
-        </div>
-        <form>
+      @isset($product)
+        <form action="{{ route('admin.product.update', $product->id)}}" method="POST" enctype="multipart/form-data">
+      @else
+        <form action="{{ route('admin.product.create')}}" method="POST" enctype="multipart/form-data">
+      @endisset
+          {{ csrf_field() }}
         <div class="card-body">
           <div class="form-group">
-            <label for="exampleInputEmail1">Username </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-          </div>
-        <div class="form-group">
-        <label for="exampleInputEmail1">title</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-        <label for="exampleInputPassword1">subtitle</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">image </label>
-            <input type="file" style="border: none" class="form-control" id="exampleInputEmail1" placeholder="Enter image">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" value="{{ old('name', $product->name ?? '') }}" placeholder="Enter Name">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">description </label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter description">
+            <label>Sub Name</label>
+            <input type="text" class="form-control" name="sub_name" value="{{ old('sub_name', $product->sub_name ?? '') }}" placeholder="Enter Sub Name">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">created_at </label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter created_at">
+            <div class="" style="display: flex; flex-direction: column;">
+              <label>Photo</label>
+              @if ($product->image ?? '')
+                <img style="padding:7px 0; width:10%;" src="{{ asset('/assets/images/'. $directorySpecial .'/'. old('image', $product->image ?? ''))}}">
+              @endif
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile" name="imageFileName">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">update_at </label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter update_at">
+            <label>Description</label>
+            <textarea id="compose-textarea" class="form-control" name="description" rows="3" placeholder="Enter Description" style="height: 400px;">{{ old('description', $product->description ?? '') }}</textarea>
           </div>
-        
-        <div class="input-group-append">
-          <button type="submit" class="btn btn-primary">
-            <a href="{{url('/admin/users')}}" style="color: white">
-              Submit
-            </a>
-          </button>
         </div>
-        </div>
-        </div>
-     
-        </div>
-        
         <div class="card-footer">
-          <a href="{{url('/admin/users')}}">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </a>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-        </form>
-        </div>
-
+      </form>
+    </div>
   </section>
-
-
-  <!-- /.content -->
-
 @endsection()

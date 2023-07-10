@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 use DB;
 
 class LevelController extends Controller
@@ -19,7 +20,7 @@ class LevelController extends Controller
             'limit' => 'integer',
         ]);
 
-        $data['levels'] = DB::table('levels')->orderBy('name','DESC')->when($request->key, function ($query) use ($request) {
+        $data['levels'] = DB::table('levels')->orderBy('name','ASC')->when($request->key, function ($query) use ($request) {
 
             $q = $request->q;
             $key = $request->key;
@@ -44,9 +45,9 @@ class LevelController extends Controller
                 'name' =>  'required',
             ]);
 
-            DB::table('skills')->insert([
+            DB::table('levels')->insert([
                 'name' =>  $request->name,
-                'created_at' =>  date('Y-m-d H:i:s'),
+                'created_at' =>  Carbon::now()->toDateTimeString(),
             ]);
 
             return redirect('admin/levels')->with('success','Data successfully added');
@@ -54,7 +55,7 @@ class LevelController extends Controller
 
         $data['title'] = "Create Level";
 
-        return view('backend.level.form', $data);
+        return view('admin.level.form', $data);
     }
 
     public function update(Request $request, $id)
@@ -72,23 +73,22 @@ class LevelController extends Controller
         {
             $request->validate([
                 'name' => 'required',
-                'value' => 'required',
             ]);
-
+            
             DB::table('levels')
                 ->where('id', $id)
                 ->update([
                     'name' =>  $request->name,
-                    'updated_at' => date('Y-m-d H:i:s'),
+                    'updated_at' => Carbon::now()->toDateTimeString(),
                 ]);
-            
+
             return redirect('admin/levels')->with('success','Data successfully added');
         }
         
         $data['title'] = "Update Level";
         $data['level'] = $level;
 
-        return view('backend.skill.form', $data);
+        return view('admin.level.form', $data);
     }
 
     public function delete($id)
