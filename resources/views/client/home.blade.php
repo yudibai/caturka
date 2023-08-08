@@ -13,17 +13,11 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner" style="height: 100%;">
-            <div class="carousel-item active">
-              <img src="https://img.freepik.com/premium-photo/large-offset-printing-press-running-long-roll-paper-production-line-industrial-printer-machine_39420-242.jpg?w=2000" class="d-block w-100" alt="...">
-            </div>
-    
-            <div class="carousel-item">
-              <img src="https://img.freepik.com/free-photo/woman-work-office-using-printer_23-2149456933.jpg?w=2000&t=st=1687490793~exp=1687491393~hmac=bfd5f8f31a289328cc0026dbb5cccf685909445fb5549ff4425b422fed80cbe4" class="d-block w-100" alt="...">
-            </div>
-            
-            <div class="carousel-item">
-              <img src="https://img.freepik.com/premium-photo/large-inkjet-printer-working-multicolor-vinyl-banner_49071-999.jpg?w=2000" class="d-block w-100" alt="...">
-            </div>
+            @foreach ($sliders as $slider)
+              <div class="carousel-item active">
+                <img src="{{ asset('assets/images/sliders/' .$slider->title .'/' .$slider->image) }}" class="d-block w-100" alt="...">
+              </div>
+            @endforeach
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
@@ -33,8 +27,6 @@
             <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
           </button>
         </div>
-        
-      
       </section>
   <section id="why-us" class="why-us" style="padding-top: 10px">
     <div class="container-fluid">
@@ -110,70 +102,18 @@
       </div>
 
       <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 col-6 col-6 portfolio-item filter-app">
-          <img src="assets/client/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
-            <a href="assets/client/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        @foreach ($products as $product)
+          <div class="col-lg-4 col-md-6 col-6 col-6 portfolio-item filter-app">
+            <img src="{{ asset('assets/images/products/' .$product->name .'/' .$product->image) }}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>{{$product->sub_name}}</h4>
+                <p>{{$product->name}}</p>
+                <a href="{{ asset('assets/images/products/' .$product->name .'/' .$product->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
+                <a href="{{ action('App\Http\Controllers\FrontController@detailProduct', $product->slug) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-web">
-          <img src="assets/client/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Web 3</h4>
-            <p>Web</p>
-            <a href="assets/client/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-app">
-          <img src="assets/client/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 2</h4>
-            <p>App</p>
-            <a href="assets/client/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-card">
-          <img src="assets/client/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Card 2</h4>
-            <p>Card</p>
-            <a href="assets/client/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-web">
-          <img src="assets/client/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Web 2</h4>
-            <p>Web</p>
-            <a href="assets/client/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-app">
-          <img src="assets/client/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>App 3</h4>
-            <p>App</p>
-            <a href="assets/client/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-
+        @endforeach
       </div>
-
     </div>
   </section>
   <section id="services" class="services">
@@ -222,6 +162,7 @@
     <div class="container" data-aos="zoom-in">
       <div class="clients-slider swiper">
         <div class="swiper-wrapper align-items-center" style="height: 10% !important">
+          @foreach ($clients as $client)
           <div class="swiper-slide"><img src="assets/client/img/clients/client-1.png" class="img-fluid" alt=""></div>
           <div class="swiper-slide"><img src="assets/client/img/clients/client-2.png" class="img-fluid" alt=""></div>
           <div class="swiper-slide"><img src="assets/client/img/clients/client-3.png" class="img-fluid" alt=""></div>
@@ -230,6 +171,8 @@
           <div class="swiper-slide"><img src="assets/client/img/clients/client-6.png" class="img-fluid" alt=""></div>
           <div class="swiper-slide"><img src="assets/client/img/clients/client-7.png" class="img-fluid" alt=""></div>
           <div class="swiper-slide"><img src="assets/client/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('assets/images/clients/' .$client->name .'/' .$client->image) }}" class="img-fluid" alt=""></div>
+          @endforeach
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -281,32 +224,32 @@
 
         </div>
 
-        <div class="col-lg-12 mt-4 mt-lg-4" data-aos="fade-left" data-aos-delay="100">
-
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
-              </div>
+         <div class="col-lg-12 mt-4 mt-lg-4" data-aos="fade-left" data-aos-delay="100">
+  
+              <form role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="nameContact" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="text" class="form-control" name="number" id="numberContact" placeholder="Your Number" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subjectContact" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea id="messageContact" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-left"> <button onclick="sendMail(); return false" type="submit">Send Message</button></div>
+              </form>
+  
             </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-left"><button type="submit">Send Message</button></div>
-          </form>
-
-        </div>
 
       </div>
 

@@ -1,70 +1,59 @@
 @extends('admin.layout.index')
-@section('title', 'Dashboard')
+@section('title', ''.$title)
 @section('content')
 
-  <!-- Content Header (Page header) -->
-  <section class="content-header">
-    <div class="container-fluid" >
-      <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1>Datatables Production</h1>
-        </div>
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">DataTables</li>
-          </ol>
+<section class="content-header">
+  <div class="container-fluid" >
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1>{{ $title }}</h1>
+      </div>
+      <div class="col-sm-6">
+        <div class="float-sm-right">
+          <a href="{{ route('admin.slider.create')}}" class="btn btn-outline-primary min-width-125" data-toggle="click-ripple" style="overflow: hidden; position: relative; z-index: 1;">Add slider</a>
         </div>
       </div>
-    </div><!-- /.container-fluid -->
-  </section>
+    </div>
+  </div>
+</section>
 
-  <section style="padding: 10px">
-    <div class="card" >
-      <div class="card-header">
-      <h3 class="card-title">Striped Full Width Table</h3>
-      </div>
-      
-      <div class="card-body p-0">
+
+<section style="padding: 10px">
+  @include('admin.layout.widget.notice')
+  <div class="card">
+    <div class="card-body p-0">
       <table class="table table-striped">
-      <thead>
+        <thead>
+          <tr>
+            <th class="text-center">Image</th>
+            <th class="text-center">Created</th>
+            <th class="text-center">Updated</th>
+            <th class="text-center">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach ($sliders as $slider)
+          <tr>
+              <td class="text-center" scope="row">{{ $slider->image }}</td>
+              <td class="text-center">{{ Carbon::parse($slider->created_at)->format('l, d F Y') }}</td>
+              <td class="text-center">{{ $slider->updated_at ? Carbon::parse($slider->updated_at)->format('l, d F Y') : 'not yet updated' }}</td>
+              <td class="text-center">
+                <div class="btn-group">
+                  <a href="{{ action('App\Http\Controllers\SliderController@update', $slider->id) }}" class="btn btn-success btn-flat">
+                    <i class="fas fa-edit"></i>
+                  </a>
+                  <a href="{{ action('App\Http\Controllers\SliderController@delete', $slider->id) }}" class="btn btn-danger btn-flat">
+                    <i class="fas fa-trash"></i>
+                  </a>
+                </div>
+              </td>
+          </tr>
+          @endforeach
         <tr>
-          <th >id</th>
-          <th>title</th>
-          <th>sub_title</th>
-          <th>image</th>
-          <th>created_at</th>
-          <th>update_at</th>
-          <th>edit</th>
-
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>1.</td>
-        <td>Update software</td>
-        <td>
-         example@gmail.com
-        </td>
-        <td>Lorem ipsum dolor </td>
-        <td>Lorem ipsum dolor </td>
-        <td>Lorem ipsum dolor </td>
-
-        <td>
-          <a href="{{url('/admin/formProduct')}}" style="color: green">
-            <i class="fa fa-edit"></i> 
-          </a>
-          <a href="{{url('/admin/formUser')}}" style="color: red">
-            <i class="fa fa-trash"></i>
-          </a>
-        </td>
-      </tr>
-      <tr>
-      </tbody>
+        </tbody>
       </table>
-      </div>
-      
-      </div>
-  </section>
+    </div>
+  </div>
+</section>
 
 @endsection()

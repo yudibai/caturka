@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('client.layout.body');
 });
 
+Route::get('/', 'App\Http\Controllers\FrontController@home');
 Route::get('/home', 'App\Http\Controllers\FrontController@home');
 Route::get('/about', 'App\Http\Controllers\FrontController@about');
 Route::get('/product', 'App\Http\Controllers\FrontController@product');

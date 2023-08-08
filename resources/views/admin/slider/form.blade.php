@@ -1,6 +1,6 @@
 @extends('admin.layout.index')
 
-@section('title', 'slider')
+@section('title', ''.$title)
 
 @section('content')
 
@@ -10,71 +10,54 @@
     <div class="container-fluid" >
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>DataTables</h1>
-        </div>
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">DataTables</li>
-          </ol>
+          <h1>{{ $title }}</h1>
         </div>
       </div>
     </div><!-- /.container-fluid -->
   </section>
 
   <section style="padding: 10px">
+    @include('admin.layout.widget.notice')
     <div class="card card-primary">
+      @isset($slider)
+        <form action="{{ route('admin.slider.update', $slider->id)}}" method="POST" enctype="multipart/form-data">
+      @else
+        <form action="{{ route('admin.slider.create')}}" method="POST" enctype="multipart/form-data">
+      @endisset
+        {{ csrf_field() }}
         <div class="card-header">
-        <h3 class="card-title">Form Users </h3>
+        <h3 class="card-title">Form Slider </h3>
         </div>
         <form>
         <div class="card-body">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Username </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-          </div>
         <div class="form-group">
-        <label for="exampleInputEmail1">title</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          <label for="exampleInputEmail1">title</label>
+          <input type="text" class="form-control" name="title" value="{{ old('title', $slider->title ?? '') }}" placeholder="Enter Title">
         </div>
         <div class="form-group">
-        <label for="exampleInputPassword1">subtitle</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="exampleInputPassword1">subtitle</label>
+          <input type="text" class="form-control" name="sub_title" value="{{ old('sub_title', $slider->sub_title ?? '') }}" placeholder="Enter Sub Title">
         </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">image </label>
-            <input type="file" style="border: none" class="form-control" id="exampleInputEmail1" placeholder="Enter image">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">description </label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter description">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">created_at </label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter created_at">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">update_at </label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter update_at">
+            <label>Photo</label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile" name="imageFileName">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+            @if ($slider->image ?? '')
+              <img style="padding:7px 0; width:10%;" src="{{ asset('/assets/images/'. $directorySpecial .'/'. old('image', $slider->image ?? ''))}}">
+            @endif
           </div>
         
-        <div class="input-group-append">
-          <button type="submit" class="btn btn-primary">
-            <a href="{{url('/admin/users')}}" style="color: white">
-              Submit
-            </a>
-          </button>
-        </div>
+          <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
         </div>
         </div>
      
         </div>
         
-        <div class="card-footer">
-          <a href="{{url('/admin/users')}}">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </a>
-        </div>
+          
         </form>
         </div>
 

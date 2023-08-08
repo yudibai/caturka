@@ -9,11 +9,11 @@ class FrontController extends Controller
 {
     public function home() {
         $data['sliders'] = DB::table('sliders')->get();
-        $data['katalogs'] = DB::table('katalogs')->get();
+        // $data['katalogs'] = DB::table('katalogs')->get();
         $data['clients'] = DB::table('clients')->get();
+        $data['products'] = DB::table('products')->get();
         return view('client.home', $data);
     }
-
     public function about() {
         return view('client.about');
     }
@@ -34,7 +34,6 @@ class FrontController extends Controller
         }
 
         $data['product'] = $product;
-        
         return view('client.detail-product', $data);
     }
 

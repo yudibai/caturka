@@ -279,19 +279,19 @@
 
 
 
-// function sendMail(tangkep) {
-
-//   const valueName = document.getElementById('nameContact').value
-//   const valueNumber = document.getElementById('numberContact').value
-//   const valueSubject = document.getElementById('subjectContact').value
-//   const valueMessage = document.getElementById('messageContact').value
-
-//   const valueEmail = `${valueName}\n${valueNumber}\n${valueMessage}\n`
-
-//   var link = "mailto:kinantanoas@gmail.com"
-//            + "?cc=myCCaddress@example.com"
-//            + "&subject=" + encodeURIComponent(valueSubject)
-//            + "&body=" + encodeURIComponent(valueEmail)
+function sendMail() {
   
-//   window.location.href = link;
-// }
+  const valueName = document.getElementById('nameContact').value
+  const valueNumber = document.getElementById('numberContact').value
+  const valueSubject = document.getElementById('subjectContact').value
+  const valueMessage = document.getElementById('messageContact').value
+
+  const valueEmail = `${valueName}\n${valueNumber}\n${valueMessage}\n`
+
+  var link = "mailto:kinantanoas@gmail.com"
+           + "?cc=myCCaddress@example.com"
+           + "&subject=" + encodeURIComponent(valueSubject)
+           + "&body=" + encodeURIComponent(valueEmail)
+  
+  window.location.href = link;
+}

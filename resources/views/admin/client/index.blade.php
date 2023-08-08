@@ -39,7 +39,7 @@
                 <td class="text-center">{{ $client->updated_at ? Carbon::parse($client->updated_at)->format('l, d F Y') : 'not yet updated' }}</td>
                 <td class="text-center">
                   <div class="btn-group">
-                    <a href="{{ action('App\Http\Controllers\ClientController@index', $client->id) }}" class="btn btn-success btn-flat">
+                    <a href="{{ action('App\Http\Controllers\ClientController@update', $client->id) }}" class="btn btn-success btn-flat">
                       <i class="fas fa-edit"></i>
                     </a>
                     <a href="{{ action('App\Http\Controllers\ClientController@delete', $client->id) }}" class="btn btn-danger btn-flat">
