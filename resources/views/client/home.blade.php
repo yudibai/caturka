@@ -4,7 +4,7 @@
 @section('content')
 
 <main id="main">
-    <section id="hero" class="d-flex justify-cntent-center align-items-center" style="height: auto; max-height: 70vh; margin-top: 80px; transition: 0.8s;">
+    <section id="hero" class="d-flex justify-cntent-center align-items-center" style="height: auto; max-height: 70vh; margin-top: 140px; transition: 0.8s;">
 
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="fade-up">
           <div class="carousel-indicators">
@@ -34,37 +34,40 @@
       <div class="row">
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
           <div class="content">
-            <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+            <h3><strong>PT Catur Kreasi Aksara</strong>, Solusi Printing Berkualitas</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              Berdiri dari tahun 1991, kami hadir dengan visi untuk menjadi perusahaan printing dengan kualitas terbaik di Indonesia.
             </p>
           </div>
 
-          <div class="accordion-list">
+          <div class="accordion-list" style="margin-top: 20px">
             <ul>
               <li data-aos="fade-up" data-aos-delay="100">
-                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Kualitas Printing Terbaik
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                   <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    Kami memiliki teknologi pencetakan mutakhir, pilihan material terbaik, dan quality control yang cermat memastikan bahwa setiap karya yang kami buat sesuai dengan keinginan client.
                   </p>
                 </div>
               </li>
 
               <li data-aos="fade-up" data-aos-delay="200">
-                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>Pengerjaan Dalam 7 Hari Kerja
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                   <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    Waktu sangatlah berharga, kami siap mengerjakan pesanan anda dalam 7 hari kerja (tergantung quantity yang dipesan).
                   </p>
                 </div>
               </li>
 
               <li data-aos="fade-up" data-aos-delay="300">
-                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Harga Kompetitif
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                   <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    Kesempurnaan tidak harus datang dengan harga premium. Kami menawarkan printing berkualitas tinggi dengan harga yang kompetitif tanpa mengorbankan kualitas.
                   </p>
                 </div>
               </li>
@@ -87,7 +90,9 @@
 
       <div class="section-title">
         <h2>KATALOG</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>
+          Dari kartu nama yang mencuri perhatian hingga brosur yang menginformasikan, hang tag yang mencolok hingga packaging, layanan pencetakan kami mencakup berbagai kebutuhan. Tidak peduli seberapa besar atau kecil kebutuhan Anda, kami adalah solusi yang tepat.
+        </p>
       </div>
 
       <div class="row">
@@ -120,37 +125,44 @@
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2>Layanan Kami</h2>
+        <p>Catur Kreasi Aksara memberikan layanan printing berkualitas tinggi  dengan teknologi mutakhir. Dengan komitmen terhadap standar tertinggi dalam hal desain, presisi, dan kepuasan pelanggan, kami siap membantu Anda mewujudkan visi Anda dengan cara yang mengesankan.</p>
       </div>
 
       <div class="row">
         <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="icon-box">
             <i class="bi bi-card-checklist"></i>
-            <h4><a href="#">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <h4><a href="#">Mengapa Memilih Layanan Pencetakan Kami?</a></h4>
+            <p>Kami menghadirkan hasil printing yang luar biasa, dan tentunya tanpa melupakan perhatian terhadap detail
+
+            </p>
           </div>
         </div>
         <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="icon-box">
             <i class="bi bi-bar-chart"></i>
-            <h4><a href="#">Dolor Sitema</a></h4>
-            <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <h4><a href="#">Pengalaman dan Reputasi:
+            </a></h4>
+            <p>Percayakan pada pengalaman kami dalam industri ini. Izinkan kami meningkatkan kebutuhan printing Anda menjadi lebih baik.
+
+            </p>
           </div>
         </div>
         <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
           <div class="icon-box">
             <i class="bi bi-binoculars"></i>
-            <h4><a href="#">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <h4><a href="#">Jaminan Kepuasan
+            </a></h4>
+            <p>Anda adalah fokus utama kami, dengan memprioritaskan kualitas pengerjaan untuk menjamin kepuasaan</p>
           </div>
         </div>
         <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
           <div class="icon-box">
             <i class="bi bi-brightness-high"></i>
-            <h4><a href="#">Nemo Enim</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <h4><a href="#">Teknologi dan Equipment Terbaik:
+            </a></h4>
+            <p>Kami menggunakan peralatan terbaik untuk menjamin kualitas printing yang sempurna.</p>
           </div>
         </div>
       </div>
@@ -163,27 +175,19 @@
       <div class="clients-slider swiper">
         <div class="swiper-wrapper align-items-center" style="height: 10% !important">
           @foreach ($clients as $client)
-          <div class="swiper-slide"><img src="assets/client/img/clients/client-1.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/client/img/clients/client-2.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/client/img/clients/client-3.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/client/img/clients/client-4.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/client/img/clients/client-5.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/client/img/clients/client-6.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/client/img/clients/client-7.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="assets/client/img/clients/client-8.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="{{ asset('assets/images/clients/' .$client->name .'/' .$client->image) }}" class="img-fluid" alt=""></div>
           @endforeach
         </div>
-        <div class="swiper-pagination"></div>
+        {{-- <div class="swiper-pagination"></div> --}}
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" style="margin-top: 10px">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Contact Us</h2>
+        <h2>Hubungi Kami</h2>
       </div>
 
       <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
@@ -192,26 +196,27 @@
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <h4>Alamat Kantor:</h4>
+              <p>Jalan Bintara Jaya Raya
+                No.40 Bintara Jaya Bekasi Barat, 17136</p>
             </div>
 
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>info@ckaprinting.com</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
+              <h4>Telepon:</h4>
+              <p>+62 21 8690 1714</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-whatsapp"></i>
               <h4>Whatsapp:</h4>
-              <p>+62 89 55488 55</p>
+              <p>+62 --</p>
             </div>
 
           </div>
@@ -246,7 +251,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-left"> <button onclick="sendMail(); return false" type="submit">Send Message</button></div>
+                <div class="text-left"> <button onclick="sendMail(); return false" type="submit">Kirim Pesan</button></div>
               </form>
   
             </div>

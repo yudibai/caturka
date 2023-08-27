@@ -66,6 +66,14 @@ Route::group(['middleware' => ['auth']], function () {
         Route::match(['get', 'post'], '/admin/user/update/{id}', 'App\Http\Controllers\UserController@update')->name('admin.user.update');
         Route::get('/admin/user/{id}', 'App\Http\Controllers\UserController@delete')->name('admin.user.delete');
 
+
+         // service
+        Route::get('/admin/service', 'App\Http\Controllers\ServiceController@index')->name('admin.service');
+        Route::match(['get', 'post'], '/admin/service/create', 'App\Http\Controllers\ServiceController@create')->name('admin.service.create');
+        Route::match(['get', 'post'], '/admin/service/update/{id}', 'App\Http\Controllers\UserController@update')->name('admin.service.update');
+        // Route::get('/admin/user/{id}', 'App\Http\Controllers\UserController@delete')->name('admin.user.delete');
+
+         
         Route::resource('/admin/formUser', 'App\Http\Controllers\FormUserController');
         Route::resource('/admin/formProduct', 'App\Http\Controllers\FormProductController');
 

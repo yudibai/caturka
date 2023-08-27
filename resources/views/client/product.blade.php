@@ -8,7 +8,7 @@
 
     <div class="section-title">
       <h2>KATALOG</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <p>Selamat datang di katalog produk digital printing kami, tempat di mana inspirasi dan kreativitas terhubung dengan teknologi modern untuk menghasilkan solusi cetak berkualitas tinggi. Dengan perpaduan antara inovasi dan desain yang menarik, produk digital printing kami akan membantu Anda mewujudkan visi Anda dengan cara yang tak terlupakan. Berikut adalah rangkaian produk digital printing berkualitas tinggi yang kami tawarkan:.</p>
     </div>
 
     <div class="row">

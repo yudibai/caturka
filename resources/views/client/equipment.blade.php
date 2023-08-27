@@ -9,46 +9,235 @@
 
         <div class="section-title">
             <h2>Equipment</h2>
+            <h4>
+                PT. Catur Kreasi Aksara saat ini mempunyai beberapa mesin cetak merk HEIDELBERG buatan Jerman dengan kapasitas cetak 5.000 exemplar per jam, dan beberapa mesin pendukung lainnya, yang terdiri dari:
+            </h4>
           </div>
         <div class="column">
-            <div class="col-lg-12" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);     padding: 50px 40px;">
-                <div class="row">
+            <div class="row">
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
 
-                    <div class="container col-md-4 " style="">
-                        <img src="https://tipspercetakan.com/wp-content/uploads/2021/09/Merk-Mesin-Cetak-Offset-Terbaik-1200px-x-675px.jpg" alt="" style="width: 100%; 
-                        height: 100%; 
-                        object-fit: contain; height: auto; margin: auto;
-                    padding-top: 20px;">
-                    </div>
-                    <div class="col-md-8 " style=" margin: auto;
-                    padding: 10px;">
-                     <div class="icon-box" style="">
-                        <i class="bi bi-bar-chart"></i>
-                        <h4><a  style="color: #691a1d">Dolor Sitema</a></h4>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                      </div>
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Heidelberg SM52 4 Colors
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <br>
-            <div class="col-lg-12" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); padding: 50px 40px;">
-                <div class="row">
-                    <div class="container col-md-4 " st>
-                        <img src="https://solusiprinting.com/wp-content/uploads/2019/10/Jenis-Mesin-Percetakan-Offset-Dan-Percetakan-Digital-1280px-x-720px.jpg.webp" alt="" style=" border-radius: 10px 10px;  width: 100%; 
-                        height: 100%; 
-                        object-fit: contain; height: auto; margin: auto;
-                    padding-top: 20px;">
-                    </div>
-                    <div class="col-md-8 " style=" margin: auto;
-                    padding: 10px;">
-                     <div class="icon-box" >
-                        <i class="bi bi-bar-chart"></i>
-                        <h4><a style="color: #691a1d">Dolor Sitema</a></h4>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                      </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Heidelberg SORMZ 2 Colors
+
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Heidelberg GTO52 2 Colors
+
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Heidelberg SM52 2 Colors
+
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Heidelberg Suprasetter - Computer To Plate 
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Cutting Machine
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Pond Machine 
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Drilling Machine
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Laminate Machine
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Powder Machine
+                            </a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
+                    <div class="row">
+                        <div class="container col-md-12 " >
+                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            height: 100%; 
+                            object-fit: contain; height: auto; margin: auto;
+                        padding-top: 20px;">
+
+                        </div>
+                        <div class="col-lg-12">
+                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Screen Printing Machine</a></span>
+                        </div>
+                        <div class="col-md-8 " style=" margin: auto;
+                        padding: 10px;">
+                         <div class="icon-box" style="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
            
 

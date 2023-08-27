@@ -38,26 +38,33 @@
             <div class="portfolio-description" >
                 
               <div class="container">
-                <b> Ukuran product : </b>
-                <div class="col-lg-12 " style="margin: auto; padding-top: 10px;">
+                <b> Ukuran Efektif:
+                                  <div class="col-lg-12 " style="margin: auto; padding-top: 10px; font-weight: 400">
                   <div class="column text-center" style="margin-bottom: 10px;">
                     <div class="col-lg-12 col-md-8 col-sm-8 border text-center" style="height: 80px;">
-                      4x10
+                      Ukuran 27.2cm x 38cm (ukuran bahan)
                     </div>
                     <div class="col-lg-12 col-md-8 col-sm-8 border"  style="height: 80px;">
-                      6x10
-                    </div>
-                    <div class="col-lg-12 col-md-8 col-sm-8 border"  style="height: 80px;">
-                      8x10
-                    </div>
-                    <div class="col-lg-12 col-md-8 col-sm-8 border"  style="height: 80px;">
-                      10x10
+                      Ukuran 35cm x 39cm (ukuran bahan)
                     </div>
                   </div>
 
-                  <p>ingin request ukuran lainnya ke <b>example@gmail.com</b></p>
+                  <b> Ukuran Khusus 
+                    :
+                    <div class="col-lg-12 " style="margin: auto; padding-top: 10px;font-weight: 400">
+                    <div class="column text-center" style="margin-bottom: 10px;">
+                      <div class="col-lg-12 col-md-8 col-sm-8 border text-center" style="height: 80px;">
+                        Max ukuran bahan 36cm x 51cm
+
+                      </div>
+                      <div class="col-lg-12 col-md-8 col-sm-8 border"  style="height: 80px;">
+                        Max ukuran bahan 51cm x 72cm
+                      </div>
+                    </div>
+
+                  <p>Untuk ukuran lainnya, Silahkan kirim pesan melalui tombol di bawah <b>Kirim pesan</b></p>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="background-color: #691a1d; color: white; width: auto; height: 50px; font-size: 12px;border: none;">Open modal for @mdo</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="background-color: #691a1d; color: white; width: auto; height: 50px; font-size: 12px;border: none;">Kirim Pesan</button>
 
                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
