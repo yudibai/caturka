@@ -59,7 +59,7 @@
                 <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
                     <div class="row">
                         <div class="container col-md-12 " >
-                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            <img src="assets/img/equipment/gto52-2-colors.jpg" alt="" style="width: 100%; 
                             height: 100%; 
                             object-fit: contain; height: auto; margin: auto;
                         padding-top: 20px;">
@@ -80,7 +80,7 @@
                 <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
                     <div class="row">
                         <div class="container col-md-12 " >
-                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            <img src="assets/img/equipment/sm522colors.jpg" alt="" style="width: 100%; 
                             height: 100%; 
                             object-fit: contain; height: auto; margin: auto;
                         padding-top: 20px;">
@@ -101,7 +101,7 @@
                 <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
                     <div class="row">
                         <div class="container col-md-12 " >
-                            <img src="assets/img/mesin1.jpg" alt="" style="width: 100%; 
+                            <img src="assets/img/equipment/suprasetter.jpg" alt="" style="width: 100%; 
                             height: 100%; 
                             object-fit: contain; height: auto; margin: auto;
                         padding-top: 20px;">
