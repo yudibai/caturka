@@ -4,31 +4,27 @@
 @section('content')
 
 <main id="main">
-    <section id="hero" class="d-flex justify-cntent-center align-items-center" style="height: auto; max-height: 70vh; margin-top: 140px; transition: 0.8s;">
 
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="fade-up">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner" style="height: 100%;">
+    <section id="hero" class="d-flex justify-cntent-center align-items-center" style="height: auto; max-height: 80vh; margin-top: 140px; transition: 0.8s;">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-interval="false">
+          <div class="carousel-inner" style="height: auto;">
             @foreach ($sliders as $slider)
               <div class="carousel-item active">
                 <img src="{{ asset('assets/images/sliders/' .$slider->title .'/' .$slider->image) }}" class="d-block w-100" alt="...">
               </div>
             @endforeach
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
           </button>
           
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
             <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
           </button>
         </div>
       </section>
-  <section id="why-us" class="why-us" style="padding-top: 10px">
+  
+      <section id="why-us" class="why-us" style="padding-top: 10px">
     <div class="container-fluid">
 
       <div class="row">
@@ -96,7 +92,7 @@
       </div>
 
       <div class="row portfolio-container">
-        @foreach ($products as $product)
+        @foreach ($products->slice(0,3) as $product )
           <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-app">
             <img src="{{ asset('assets/images/products/' .$product->name .'/' .$product->image) }}" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -224,7 +220,7 @@
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="nameContact" placeholder="Your Name" required>
-                  </div>/
+                  </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
                     <input type="text" class="form-control" name="number" id="numberContact" placeholder="Your Number" required>
                   </div>

@@ -11,17 +11,6 @@
       <p>Selamat datang di katalog produk digital printing kami, tempat di mana inspirasi dan kreativitas terhubung dengan teknologi modern untuk menghasilkan solusi cetak berkualitas tinggi. Dengan perpaduan antara inovasi dan desain yang menarik, produk digital printing kami akan membantu Anda mewujudkan visi Anda dengan cara yang tak terlupakan. Berikut adalah rangkaian produk digital printing berkualitas tinggi yang kami tawarkan:.</p>
     </div>
 
-    <div class="row">
-      <div class="col-lg-12 d-flex justify-content-center">
-        <ul id="portfolio-flters">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
-        </ul>
-      </div>
-    </div>
-
     <div class="row portfolio-container">
       @foreach ($products as $product)
         <div class="col-lg-4 col-md-6 col-6 col-6 portfolio-item filter-app">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>ckaprinting</title>
 
   <link href="assets/client/img/Screenshot_2023-06-21_at_23.55.06-removebg-preview.png" rel="icon">
   <link href="assets/client/img/Screenshot_2023-06-21_at_23.55.06-removebg-preview.png" rel="apple-touch-icon">

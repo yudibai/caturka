@@ -288,10 +288,12 @@ function sendMail() {
 
   const valueEmail = `${valueName}\n${valueNumber}\n${valueMessage}\n`
 
-  var link = "mailto:kinantanoas@gmail.com"
-           + "?cc=myCCaddress@example.com"
+  var link = "mailto:info@ckaprinting.com"
+           + "?cc=info@ckaprinting.com; sandy@ckaprinting.com; nico@ckaprinting.com"
            + "&subject=" + encodeURIComponent(valueSubject)
            + "&body=" + encodeURIComponent(valueEmail)
   
   window.location.href = link;
 }
+
+
