@@ -12,10 +12,10 @@
                
             </div>
             <div class="col-lg-12" style="background: #fff; ">
-                <div class="row">
+                <div class="row" style="padding: 30px">
                     <div class="col-lg-4" >
                         <br>
-                        <img style="width: 440px" src="https://img.freepik.com/free-photo/young-man-learning-virtual-classroom_23-2149200179.jpg?w=1800&t=st=1691510045~exp=1691510645~hmac=f03232ea878a9e5a8484ffebec2957957f0f94ddeac3d0ae41bc0dc4ff02391b" alt="">
+                        <img style="width: 440px" src="assets/img/aboutCom.png" alt="">
                     </div>
                    <div class="col-lg-8 " style="align-items:left;">
                     <h2 style="font-weight: 600; padding-top: 15px"> Sejarah Kami</h2>
