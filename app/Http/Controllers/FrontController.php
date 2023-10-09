@@ -34,7 +34,7 @@ class FrontController extends Controller
         }
 
         $data['product'] = $product;
-        return view('client.detail-product', $data);
+        return view('client.detailproduct', $data);
     }
 
     public function equipment() {

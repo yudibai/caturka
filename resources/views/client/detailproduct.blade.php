@@ -53,7 +53,8 @@
     <div class="container">
       <ol>
         <li>Home</li>
-        <li>Portfolio Details</li>
+        <li>Product</li>
+        <li>{{ $product->name }}</li>
       </ol>
       <h2>Portfolio Details</h2>
     </div>
