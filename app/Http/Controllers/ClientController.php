@@ -38,7 +38,7 @@ class ClientController extends Controller
     public function create(Request $request)
     {
         $slug = str_replace(' ','-', strtolower($request->name));
-        $directorySpecial = 'clients/'.$slug;
+        $directorySpecial = 'clients';
 
         if ($request->getMethod() == 'POST')
         {
@@ -47,7 +47,7 @@ class ClientController extends Controller
                 'imageFileName' =>  'required',
             ]);
 
-            $directorySpecial = 'clients/'.$slug;
+            $directorySpecial = 'clients';
             
             // Image Upload
             $imageFileName = Utilities::imageUpload($request->imageFileName, $request->name, '', $request->file('imageFileName'), $directorySpecial);
@@ -79,17 +79,16 @@ class ClientController extends Controller
             return redirect('admin/clients')->with('info', 'Data not found');
         }
         
-        $directorySpecial = 'clients/'.str_replace(' ','-', strtolower($client->name));
+        $directorySpecial = 'clients';
 
         if ($request->getMethod() == 'POST')
         {
             $request->validate([
                 'name' => 'required',
-                'imageFileName' => 'required',
             ]);
             
 
-            $directorySpecial = 'clients/'.str_replace(' ','-', strtolower($request->name));
+            $directorySpecial = 'clients';
             
             // Image Upload
             $imageFileName = Utilities::imageUpload($request->imageFileName, $request->name, $client->image, $request->file('imageFileName'), $directorySpecial);
@@ -117,7 +116,7 @@ class ClientController extends Controller
         $client = DB::table('clients')
                 ->where('id', $id)
                 ->first();
-        $directorySpecial = 'clients/'.str_replace(' ','-', strtolower($client->name));
+        $directorySpecial = 'clients/'. $client->image;
 
         // delete folder beserta isinya
         File::deleteDirectory(public_path('/assets/images/' .$directorySpecial));

@@ -10,7 +10,7 @@
           <div class="carousel-inner" style="height: auto;">
             @foreach ($sliders as $slider)
               <div class="carousel-item active">
-                <img src="{{ asset('assets/images/sliders/' .$slider->title .'/' .$slider->image) }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('assets/images/sliders/'. $slider->image) }}" class="d-block w-100" alt="...">
               </div>
             @endforeach
           </div>
@@ -94,11 +94,11 @@
       <div class="row portfolio-container">
         @foreach ($products->slice(0,3) as $product )
           <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-app">
-            <img src="{{ asset('assets/images/products/' .$product->name .'/' .$product->image) }}" class="img-fluid" alt="">
+            <img src="{{ asset('assets/images/products/'. $product->image) }}" class="img-fluid" alt="">
             <div class="portfolio-info">
                 <h4>{{$product->sub_name}}</h4>
                 <p>{{$product->name}}</p>
-                <a href="{{ asset('assets/images/products/' .$product->name .'/' .$product->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
+                <a href="{{ asset('assets/images/products/'. $product->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
                 <a href="{{ action('App\Http\Controllers\FrontController@detailProduct', $product->slug) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -160,7 +160,7 @@
       <div class="clients-slider swiper">
         <div class="swiper-wrapper align-items-center" style="height: 10% !important">
           @foreach ($clients as $client)
-            <div class="swiper-slide"><img src="{{ asset('assets/images/clients/' .$client->name .'/' .$client->image) }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('assets/images/clients/'. $client->image) }}" class="img-fluid" alt=""></div>
           @endforeach
         </div>
         {{-- <div class="swiper-pagination"></div> --}}

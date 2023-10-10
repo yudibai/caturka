@@ -38,16 +38,17 @@ class ProductController extends Controller
     public function create(Request $request)
     {
         $slug = str_replace(' ','-', strtolower($request->name));
-        $directorySpecial = 'products/'.$slug;
+        $directorySpecial = 'products';
 
         if ($request->getMethod() == 'POST')
         {
             $request->validate([
                 'name' =>  'required',
                 'description' =>  'required',
+                'imageFileName' =>  'required',
             ]);
 
-            $directorySpecial = 'products/'.$slug;
+            $directorySpecial = 'products';
             
             // Image Upload
             $imageFileName = Utilities::imageUpload($request->imageFileName, $request->name, '', $request->file('imageFileName'), $directorySpecial);
@@ -82,18 +83,17 @@ class ProductController extends Controller
             return redirect('admin/products')->with('info', 'Data not found');
         }
         
-        $directorySpecial = 'products/'.str_replace(' ','-', strtolower($product->name));
+        $directorySpecial = 'products';
 
         if ($request->getMethod() == 'POST')
         {
             $request->validate([
                 'name' => 'required',
-                'sub_name' => 'required',
                 'description' => 'required',
             ]);
             
 
-            $directorySpecial = 'products/'.str_replace(' ','-', strtolower($request->name));
+            $directorySpecial = 'products';
             
             // Image Upload
             $imageFileName = Utilities::imageUpload($request->imageFileName, $request->name, $product->image, $request->file('imageFileName'), $directorySpecial);
@@ -124,10 +124,10 @@ class ProductController extends Controller
         $product = DB::table('products')
                 ->where('id', $id)
                 ->first();
-        $directorySpecial = 'products/'.str_replace(' ','-', strtolower($product->name));
+        $directorySpecial = 'products/'. $product->image;
 
         // delete folder beserta isinya
-        File::deleteDirectory(public_path('/assets/images/' .$directorySpecial));
+        File::delete(public_path('/assets/images/' .$directorySpecial));
 
         // delete data in database
         DB::table('products')->where('id', $id)->delete();

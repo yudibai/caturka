@@ -38,7 +38,7 @@ class SliderController extends Controller
     public function create(Request $request)
     {
         $slug = str_replace(' ','-', strtolower($request->title));
-        $directorySpecial = 'sliders/'.$slug;
+        $directorySpecial = 'sliders';
 
         if ($request->getMethod() == 'POST')
         {
@@ -46,7 +46,7 @@ class SliderController extends Controller
                 'imageFileName' =>  'required',
             ]);
 
-            $directorySpecial = 'sliders/'.$slug;
+            $directorySpecial = 'sliders';
             
             // Image Upload
             $imageFileName = Utilities::imageUpload($request->imageFileName, $request->title, '', $request->file('imageFileName'), $directorySpecial);
@@ -79,16 +79,11 @@ class SliderController extends Controller
             return redirect('admin/sliders')->with('info', 'Data not found');
         }
         
-        $directorySpecial = 'sliders/'.str_replace(' ','-', strtolower($slider->title));
+        $directorySpecial = 'sliders';
 
         if ($request->getMethod() == 'POST')
         {
-            $request->validate([
-                'imageFileName' => 'required',
-            ]);
-            
-
-            $directorySpecial = 'sliders/'.str_replace(' ','-', strtolower($request->title));
+            $directorySpecial = 'sliders';
             
             // Image Upload
             $imageFileName = Utilities::imageUpload($request->imageFileName, $request->title, $slider->image, $request->file('imageFileName'), $directorySpecial);
@@ -117,7 +112,7 @@ class SliderController extends Controller
         $slider = DB::table('sliders')
                 ->where('id', $id)
                 ->first();
-        $directorySpecial = 'sliders/'.str_replace(' ','-', strtolower($slider->title));
+        $directorySpecial = 'sliders/'. $slider->image;
 
         // delete folder beserta isinya
         File::deleteDirectory(public_path('/assets/images/' .$directorySpecial));

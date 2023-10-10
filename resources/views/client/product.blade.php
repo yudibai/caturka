@@ -14,11 +14,11 @@
     <div class="row portfolio-container">
       @foreach ($products as $product)
         <div class="col-lg-4 col-md-6 col-6 col-6 portfolio-item filter-app">
-          <img src="{{ asset('assets/images/products/' .$product->name .'/' .$product->image) }}" class="img-fluid" alt="">
+          <img src="{{ asset('assets/images/products/'. $product->image) }}" class="img-fluid" alt="">
           <div class="portfolio-info">
               <h4>{{$product->sub_name}}</h4>
               <p>{{$product->name}}</p>
-              <a href="{{ asset('assets/images/products/' .$product->name .'/' .$product->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
+              <a href="{{ asset('assets/images/products/'. $product->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
               <a href="{{ action('App\Http\Controllers\FrontController@detailProduct', $product->slug) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
