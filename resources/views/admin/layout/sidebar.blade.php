@@ -56,14 +56,6 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{url('/admin/service')}}" class="nav-link">
-              <i class="nav-icon fa fa-fw fa-map"></i> 
-              <p>
-                Service
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
             <a href="{{url('/admin/clients')}}" class="nav-link">
               <i class="nav-icon fa fa-fw fa-users"></i> 
               <p>
