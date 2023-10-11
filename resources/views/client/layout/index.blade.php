@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ckaprinting</title>
 
-  <link href="assets/client/img/Screenshot_2023-06-21_at_23.55.06-removebg-preview.png" rel="icon">
-  <link href="assets/client/img/Screenshot_2023-06-21_at_23.55.06-removebg-preview.png" rel="apple-touch-icon">
+  <link rel="icon" href="{{ asset('logo.ico') }}">
+  <link rel="apple-touch-icon" href="{{ asset('logo.ico') }}">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
