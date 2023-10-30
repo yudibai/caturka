@@ -32,7 +32,8 @@
           <div class="content">
             <h3><strong>PT Catur Kreasi Aksara</strong>, Solusi Printing Berkualitas</h3>
             <p>
-              Berdiri dari tahun 1991, kami hadir dengan visi untuk menjadi perusahaan printing dengan kualitas terbaik di Indonesia.
+              Berdiri dari tahun 1991, kami hadir dengan visi untuk menjadi perusahaan printing dengan kualitas terbaik. Perusahaan kami berawal dari spesialis Envelope Packaging Golf.
+
             </p>
           </div>
 
@@ -43,7 +44,7 @@
                   <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                 <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                   <p>
-                    Kami memiliki teknologi pencetakan mutakhir, pilihan material terbaik, dan quality control yang cermat memastikan bahwa setiap karya yang kami buat sesuai dengan keinginan client.
+                    Kami memiliki teknologi pencetakan mutakhir, pilihan material terbaik, dan quality control yang cermat memastikan bahwa setiap karya yang kami buat sesuai dengan keinginan customer.
                   </p>
                 </div>
               </li>
@@ -87,7 +88,7 @@
       <div class="section-title">
         <h2>KATALOG</h2>
         <p>
-          Dari kartu nama yang mencuri perhatian hingga brosur yang menginformasikan, hang tag yang mencolok hingga packaging, layanan pencetakan kami mencakup berbagai kebutuhan. Tidak peduli seberapa besar atau kecil kebutuhan Anda, kami adalah solusi yang tepat.
+          Dari Envelope Packaging Golf yang memukau untuk menarik pembeli , Kartu Nama yang mencuri perhatian hingga Brosur yang menginformasikan, Hang Tag yang mencolok hingga Header Card, layanan pencetakan kami mencakup berbagai kebutuhan. Tidak peduli seberapa besar atau kecil kebutuhan Anda, kami adalah solusi yang tepat.
         </p>
       </div>
 
@@ -182,8 +183,9 @@
             <div class="address">
               <i class="bi bi-geo-alt"></i>
               <h4>Alamat Kantor:</h4>
-              <p>Jalan Bintara Jaya Raya
-                No.40 Bintara Jaya Bekasi Barat, 17136</p>
+              <p>
+              Jl. Bintara Jaya Raya No 40 Bintara Jaya. Cibening. Bekasi Barat 17136 INDONESIA
+              </p>
             </div>
 
             <div class="email">
@@ -195,13 +197,13 @@
             <div class="phone">
               <i class="bi bi-phone"></i>
               <h4>Telepon:</h4>
-              <p>+62 21 8690 1714</p>
+              <p>+62 21 86901714</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-whatsapp"></i>
               <h4>Whatsapp:</h4>
-              <p>+62 --</p>
+              <p>+62 818716809</p>
             </div>
 
           </div>

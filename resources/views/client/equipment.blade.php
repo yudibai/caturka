@@ -98,25 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
-                    <div class="row">
-                        <div class="container col-md-12 " >
-                            <img src="assets/img/equipment/MESIN_BOR.jpg" alt="" style="width: 100%; 
-                            object-fit: contain; height: 45vh; margin: auto;
-                        padding-top: 20px;">
-
-                        </div>
-                        <div class="col-lg-12">
-                             <span style="font-weight: 600; fon"><a style="color: #691a1d">Bor Machine
-                            </a></span>
-                        </div>
-                        <div class="col-md-8 " style=" margin: auto;
-                        padding: 10px;">
-                         <div class="icon-box" style="">
-                        </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
                     <div class="row">
                         <div class="container col-md-12 " >
@@ -163,9 +145,9 @@
                 <div class="col-lg-6 we1" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);   padding: 50px 40px; ">
                     <div class="row">
                         <div class="container col-md-12 " >
-                            <img src="assets/img/equipment/CTP.jpg" alt="" style="width: 100%; 
-                            height: 100%; 
-                            object-fit: contain; height: auto; margin: auto;
+                            <img src="assets/img/equipment/MESIN_BOR.jpg" alt="" style="width: 100%; 
+                   
+                            object-fit: contain; height: 50vh; margin: auto;
                         padding-top: 20px;">
 
                         </div>
