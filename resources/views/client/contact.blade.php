@@ -50,7 +50,8 @@
         </div>
 
         <div class="col-lg-12 mt-4 mt-lg-4" data-aos="fade-left" data-aos-delay="100">
-          <form role="form" class="email-form">
+  
+          <form role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="nameContact" placeholder="Your Name" required>
@@ -70,8 +71,9 @@
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-left"> <button onclick="sendMail()" type="submit">Kirim Pesan</button></div>
+            <div class="text-left"> <button onclick="sendMail(); return false" type="submit">Kirim Pesan</button></div>
           </form>
+
         </div>
     </div>
   </section>

@@ -8,7 +8,10 @@
 
     <div class="section-title">
       <h2>KATALOG</h2>
-      <p>Selamat datang di katalog produk digital printing kami, tempat di mana inspirasi dan kreativitas terhubung dengan teknologi modern untuk menghasilkan solusi cetak berkualitas tinggi. Dengan perpaduan antara inovasi dan desain yang menarik, produk digital printing kami akan membantu Anda mewujudkan visi Anda dengan cara yang tak terlupakan. Berikut adalah rangkaian produk digital printing berkualitas tinggi yang kami tawarkan:.</p>
+      <p>
+      
+Dari Envelope Packaging Golf yang memukau untuk menarik pembeli , Kartu Nama yang mencuri perhatian hingga Brosur yang menginformasikan, Hang Tag yang mencolok hingga Header Card, layanan pencetakan kami mencakup berbagai kebutuhan. Tidak peduli seberapa besar atau kecil kebutuhan Anda, kami adalah solusi yang tepat.
+      </p>
     </div>
 
     <div class="row portfolio-container">
