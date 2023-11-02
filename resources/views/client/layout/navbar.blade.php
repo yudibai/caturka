@@ -40,7 +40,7 @@
 
   <style>
     .nav-link span {
-      margin-top: 10px
+      margin-top: 10px;
     }
 
     @media screen and (max-width: 990px) {
